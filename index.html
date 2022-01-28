@@ -4,17 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Rotating Navigation</title>
   </head>
   <body>
     <div class="container">
       <div class="circle-container">
         <div class="circle">
-          <button id="close">
-            <i class="fas fa-times"></i>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+            <!-- change id buttuon from close to open and change icon from times to bar -->
           </button>
           <button id="close">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
           </button>
         </div>
       </div>
@@ -50,14 +56,14 @@
           voluptatum reiciendis et odit, accusantium nam porro tenetur dolor ut?
         </p>
       </div>
-      <nav>
-        <ul>
-          <li><i class="fas fa-home"></i> Home</li>
-          <li><i class="fas fa-user-alt"></i> About</li>
-          <li><i class="fas fa-envelope"></i> Contact</li>
-        </ul>
-      </nav>
     </div>
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="#"> Home</a></li>
+        <li><i class="fas fa-user"></i><a href="#"> About</a></li>
+        <li><i class="fas fa-envelope"></i><a href="#"> Contact</a></li>
+      </ul>
+    </nav>
     <script src="script.js"></script>
   </body>
 </html>
